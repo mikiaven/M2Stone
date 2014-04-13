@@ -1,0 +1,4 @@
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\SpaceApp\bin\SpaceApp.dll
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\SpaceApp\bin\SpaceApp.pdb
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\SpaceApp\obj\Debug\SpaceApp.dll
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\SpaceApp\obj\Debug\SpaceApp.pdb

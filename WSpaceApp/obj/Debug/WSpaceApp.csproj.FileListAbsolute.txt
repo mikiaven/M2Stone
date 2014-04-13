@@ -1,0 +1,7 @@
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\WSpaceApp\bin\WSpaceApp.dll
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\WSpaceApp\bin\WSpaceApp.pdb
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\WSpaceApp\bin\spaceNegocio.dll
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\WSpaceApp\bin\spaceNegocio.pdb
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\WSpaceApp\obj\Debug\WSpaceApp.csprojResolveAssemblyReference.cache
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\WSpaceApp\obj\Debug\WSpaceApp.dll
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\WSpaceApp\obj\Debug\WSpaceApp.pdb

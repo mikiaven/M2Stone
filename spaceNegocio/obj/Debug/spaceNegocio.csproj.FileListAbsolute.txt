@@ -1,0 +1,6 @@
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\spaceNegocio\bin\Debug\spaceNegocio.dll.config
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\spaceNegocio\bin\Debug\spaceNegocio.dll
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\spaceNegocio\bin\Debug\spaceNegocio.pdb
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\spaceNegocio\obj\Debug\spaceNegocio.dll
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\spaceNegocio\obj\Debug\spaceNegocio.pdb
+C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\spaceNegocio\obj\Debug\spaceNegocio.csprojResolveAssemblyReference.cache

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMeteors">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMeteorsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMeteorsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNEA">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetNEAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNEAResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPHA">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPHAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPHAResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getNEA_MayorMagnitud">
+        <s:complexType />
+      </s:element>
+      <s:element name="getNEA_MayorMagnitudResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getNEA_MayorMagnitudResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPHA_MayorMagnitud">
+        <s:complexType />
+      </s:element>
+      <s:element name="getPHA_MayorMagnitudResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getPHA_MayorMagnitudResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMeteorsByContinent">
+        <s:complexType />
+      </s:element>
+      <s:element name="getMeteorsByContinentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMeteorsByContinentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMeteorsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMeteors" />
+  </wsdl:message>
+  <wsdl:message name="GetMeteorsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMeteorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNEASoapIn">
+    <wsdl:part name="parameters" element="tns:GetNEA" />
+  </wsdl:message>
+  <wsdl:message name="GetNEASoapOut">
+    <wsdl:part name="parameters" element="tns:GetNEAResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPHASoapIn">
+    <wsdl:part name="parameters" element="tns:GetPHA" />
+  </wsdl:message>
+  <wsdl:message name="GetPHASoapOut">
+    <wsdl:part name="parameters" element="tns:GetPHAResponse" />
+  </wsdl:message>
+  <wsdl:message name="getNEA_MayorMagnitudSoapIn">
+    <wsdl:part name="parameters" element="tns:getNEA_MayorMagnitud" />
+  </wsdl:message>
+  <wsdl:message name="getNEA_MayorMagnitudSoapOut">
+    <wsdl:part name="parameters" element="tns:getNEA_MayorMagnitudResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPHA_MayorMagnitudSoapIn">
+    <wsdl:part name="parameters" element="tns:getPHA_MayorMagnitud" />
+  </wsdl:message>
+  <wsdl:message name="getPHA_MayorMagnitudSoapOut">
+    <wsdl:part name="parameters" element="tns:getPHA_MayorMagnitudResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMeteorsByContinentSoapIn">
+    <wsdl:part name="parameters" element="tns:getMeteorsByContinent" />
+  </wsdl:message>
+  <wsdl:message name="getMeteorsByContinentSoapOut">
+    <wsdl:part name="parameters" element="tns:getMeteorsByContinentResponse" />
+  </wsdl:message>
+  <wsdl:portType name="spaceWSSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMeteors">
+      <wsdl:input message="tns:GetMeteorsSoapIn" />
+      <wsdl:output message="tns:GetMeteorsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNEA">
+      <wsdl:input message="tns:GetNEASoapIn" />
+      <wsdl:output message="tns:GetNEASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPHA">
+      <wsdl:input message="tns:GetPHASoapIn" />
+      <wsdl:output message="tns:GetPHASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getNEA_MayorMagnitud">
+      <wsdl:input message="tns:getNEA_MayorMagnitudSoapIn" />
+      <wsdl:output message="tns:getNEA_MayorMagnitudSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getPHA_MayorMagnitud">
+      <wsdl:input message="tns:getPHA_MayorMagnitudSoapIn" />
+      <wsdl:output message="tns:getPHA_MayorMagnitudSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMeteorsByContinent">
+      <wsdl:input message="tns:getMeteorsByContinentSoapIn" />
+      <wsdl:output message="tns:getMeteorsByContinentSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="spaceWSSoap" type="tns:spaceWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMeteors">
+      <soap:operation soapAction="http://tempuri.org/GetMeteors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNEA">
+      <soap:operation soapAction="http://tempuri.org/GetNEA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPHA">
+      <soap:operation soapAction="http://tempuri.org/GetPHA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNEA_MayorMagnitud">
+      <soap:operation soapAction="http://tempuri.org/getNEA_MayorMagnitud" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPHA_MayorMagnitud">
+      <soap:operation soapAction="http://tempuri.org/getPHA_MayorMagnitud" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMeteorsByContinent">
+      <soap:operation soapAction="http://tempuri.org/getMeteorsByContinent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="spaceWSSoap12" type="tns:spaceWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMeteors">
+      <soap12:operation soapAction="http://tempuri.org/GetMeteors" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNEA">
+      <soap12:operation soapAction="http://tempuri.org/GetNEA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPHA">
+      <soap12:operation soapAction="http://tempuri.org/GetPHA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNEA_MayorMagnitud">
+      <soap12:operation soapAction="http://tempuri.org/getNEA_MayorMagnitud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPHA_MayorMagnitud">
+      <soap12:operation soapAction="http://tempuri.org/getPHA_MayorMagnitud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMeteorsByContinent">
+      <soap12:operation soapAction="http://tempuri.org/getMeteorsByContinent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="spaceWS">
+    <wsdl:port name="spaceWSSoap" binding="tns:spaceWSSoap">
+      <soap:address location="http://localhost:50068/spaceWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="spaceWSSoap12" binding="tns:spaceWSSoap12">
+      <soap12:address location="http://localhost:50068/spaceWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

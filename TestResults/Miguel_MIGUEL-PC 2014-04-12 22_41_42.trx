@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="407a9732-0f2e-4bb8-ba7e-a96217fac0e4" name="Miguel@MIGUEL-PC 2014-04-12 22:41:42" runUser="Miguel-PC\Miguel" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="1dcbe75f-c5ac-4345-ae5f-4a9db4675057">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Miguel_MIGUEL-PC 2014-04-12 22_41_42">
+      <DeploymentItem filename="C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\spaceNegocio\bin\Debug\spaceNegocio.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-04-12T22:41:42.6267336-04:00" queuing="2014-04-12T22:41:42.8417459-04:00" start="2014-04-12T22:41:43.1637643-04:00" finish="2014-04-12T22:42:03.2059107-04:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ReadUrlFileTest" storage="c:\users\miguel\documents\visual studio 2010\projects\spaceapps\testunitspace\bin\debug\testunitspace.dll" id="4cd74047-febe-3052-6a5b-ec8bb85c3934">
+      <Execution id="82df8ea4-7d07-4b2d-a5f6-b8e322598dba" />
+      <TestMethod codeBase="C:/Users/Miguel/Documents/Visual Studio 2010/Projects/spaceApps/TestUnitSpace/bin/Debug/TestUnitSpace.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestUnitSpace.FileUrlReaderTest, TestUnitSpace, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ReadUrlFileTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4cd74047-febe-3052-6a5b-ec8bb85c3934" executionId="82df8ea4-7d07-4b2d-a5f6-b8e322598dba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="82df8ea4-7d07-4b2d-a5f6-b8e322598dba" testId="4cd74047-febe-3052-6a5b-ec8bb85c3934" testName="ReadUrlFileTest" computerName="MIGUEL-PC" duration="00:00:19.7694397" startTime="2014-04-12T22:41:43.1667645-04:00" endTime="2014-04-12T22:42:03.1629082-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82df8ea4-7d07-4b2d-a5f6-b8e322598dba">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;spaceNegocio.FileUrlReader&gt;. </Message>
+          <StackTrace>   at TestUnitSpace.FileUrlReaderTest.ReadUrlFileTest() in C:\Users\Miguel\Documents\Visual Studio 2010\Projects\spaceApps\TestUnitSpace\FileUrlReaderTest.cs:line 76
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

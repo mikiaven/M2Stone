@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="spaceappsModelStoreContainer" CdmEntityContainer="spaceappsEntities">
+    <EntitySetMapping Name="NEAm">
+      <EntityTypeMapping TypeName="spaceappsModel.NEAm">
+        <MappingFragment StoreEntitySet="NEAm">
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="AbsoluteMagnitudeH" ColumnName="AbsoluteMagnitudeH" />
+          <ScalarProperty Name="SlopeParameterG" ColumnName="SlopeParameterG" />
+          <ScalarProperty Name="Epoch" ColumnName="Epoch" />
+          <ScalarProperty Name="MeanAnomaly" ColumnName="MeanAnomaly" />
+          <ScalarProperty Name="ArgumentPerihelion" ColumnName="ArgumentPerihelion" />
+          <ScalarProperty Name="LongitudeAscendingNode" ColumnName="LongitudeAscendingNode" />
+          <ScalarProperty Name="Inclination" ColumnName="Inclination" />
+          <ScalarProperty Name="OrbitalEccentricity" ColumnName="OrbitalEccentricity" />
+          <ScalarProperty Name="MeanDailyMotion" ColumnName="MeanDailyMotion" />
+          <ScalarProperty Name="SemimajorAxis" ColumnName="SemimajorAxis" />
+          <ScalarProperty Name="UncertaintyParameter" ColumnName="UncertaintyParameter" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="NumberofObservations" ColumnName="NumberofObservations" />
+          <ScalarProperty Name="NumberofOppositions" ColumnName="NumberofOppositions" />
+          <ScalarProperty Name="ObservationDuration" ColumnName="ObservationDuration" />
+          <ScalarProperty Name="RMS" ColumnName="RMS" />
+          <ScalarProperty Name="CoarseIndicatorofPerturbers" ColumnName="CoarseIndicatorofPerturbers" />
+          <ScalarProperty Name="PreciseIndicatorofPerturbers" ColumnName="PreciseIndicatorofPerturbers" />
+          <ScalarProperty Name="Computer" ColumnName="Computer" />
+          <ScalarProperty Name="TypeofOrbit" ColumnName="TypeofOrbit" />
+          <ScalarProperty Name="ReadableDesignationoftheAsteroid" ColumnName="ReadableDesignationoftheAsteroid" />
+          <ScalarProperty Name="DateoflastObservation" ColumnName="DateoflastObservation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

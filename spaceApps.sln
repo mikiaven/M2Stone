@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spaceNegocio", "spaceNegocio\spaceNegocio.csproj", "{D5A1928F-274B-4587-AE3B-76BAAAADC312}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSpaceApp", "WSpaceApp\WSpaceApp.csproj", "{35FFEF1A-30A9-427D-A8CA-5D8DC68DF0C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceApp", "SpaceApp\SpaceApp.csproj", "{252E6FF2-CF52-426D-A553-895E546EDD1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnitSpace", "TestUnitSpace\TestUnitSpace.csproj", "{1BBB2E6D-34E9-445A-8BA2-BF29BD3E13C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5173378B-8A4D-4919-9140-2B15BBC08DE1}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		spaceApps.vsmdi = spaceApps.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = spaceApps.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5A1928F-274B-4587-AE3B-76BAAAADC312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5A1928F-274B-4587-AE3B-76BAAAADC312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5A1928F-274B-4587-AE3B-76BAAAADC312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5A1928F-274B-4587-AE3B-76BAAAADC312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35FFEF1A-30A9-427D-A8CA-5D8DC68DF0C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35FFEF1A-30A9-427D-A8CA-5D8DC68DF0C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35FFEF1A-30A9-427D-A8CA-5D8DC68DF0C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35FFEF1A-30A9-427D-A8CA-5D8DC68DF0C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{252E6FF2-CF52-426D-A553-895E546EDD1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{252E6FF2-CF52-426D-A553-895E546EDD1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{252E6FF2-CF52-426D-A553-895E546EDD1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{252E6FF2-CF52-426D-A553-895E546EDD1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BBB2E6D-34E9-445A-8BA2-BF29BD3E13C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BBB2E6D-34E9-445A-8BA2-BF29BD3E13C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BBB2E6D-34E9-445A-8BA2-BF29BD3E13C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BBB2E6D-34E9-445A-8BA2-BF29BD3E13C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

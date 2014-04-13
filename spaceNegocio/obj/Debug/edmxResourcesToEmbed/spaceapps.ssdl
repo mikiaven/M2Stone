@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="spaceappsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="spaceappsModelStoreContainer">
+    <EntitySet Name="NEAm" EntityType="spaceappsModel.Store.NEAm" store:Type="Tables" store:Schema="dbo" store:Name="NEAm">
+      <DefiningQuery>SELECT 
+      [NEAm].[Designation] AS [Designation], 
+      [NEAm].[AbsoluteMagnitudeH] AS [AbsoluteMagnitudeH], 
+      [NEAm].[SlopeParameterG] AS [SlopeParameterG], 
+      [NEAm].[Epoch] AS [Epoch], 
+      [NEAm].[MeanAnomaly] AS [MeanAnomaly], 
+      [NEAm].[ArgumentPerihelion] AS [ArgumentPerihelion], 
+      [NEAm].[LongitudeAscendingNode] AS [LongitudeAscendingNode], 
+      [NEAm].[Inclination] AS [Inclination], 
+      [NEAm].[OrbitalEccentricity] AS [OrbitalEccentricity], 
+      [NEAm].[MeanDailyMotion] AS [MeanDailyMotion], 
+      [NEAm].[SemimajorAxis] AS [SemimajorAxis], 
+      [NEAm].[UncertaintyParameter] AS [UncertaintyParameter], 
+      [NEAm].[Reference] AS [Reference], 
+      [NEAm].[NumberofObservations] AS [NumberofObservations], 
+      [NEAm].[NumberofOppositions] AS [NumberofOppositions], 
+      [NEAm].[ObservationDuration] AS [ObservationDuration], 
+      [NEAm].[RMS] AS [RMS], 
+      [NEAm].[CoarseIndicatorofPerturbers] AS [CoarseIndicatorofPerturbers], 
+      [NEAm].[PreciseIndicatorofPerturbers] AS [PreciseIndicatorofPerturbers], 
+      [NEAm].[Computer] AS [Computer], 
+      [NEAm].[TypeofOrbit] AS [TypeofOrbit], 
+      [NEAm].[ReadableDesignationoftheAsteroid] AS [ReadableDesignationoftheAsteroid], 
+      [NEAm].[DateoflastObservation] AS [DateoflastObservation]
+      FROM [dbo].[NEAm] AS [NEAm]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'spaceapps.dbo.NEAm' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="NEAm">
+    <Key>
+      <PropertyRef Name="AbsoluteMagnitudeH" />
+    </Key>
+    <Property Name="Designation" Type="varchar" MaxLength="50" />
+    <Property Name="AbsoluteMagnitudeH" Type="decimal" Nullable="false" Precision="15" Scale="2" />
+    <Property Name="SlopeParameterG" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="Epoch" Type="varchar" MaxLength="50" />
+    <Property Name="MeanAnomaly" Type="decimal" Scale="5" />
+    <Property Name="ArgumentPerihelion" Type="decimal" Scale="5" />
+    <Property Name="LongitudeAscendingNode" Type="decimal" Scale="5" />
+    <Property Name="Inclination" Type="decimal" Scale="5" />
+    <Property Name="OrbitalEccentricity" Type="decimal" Precision="15" Scale="8" />
+    <Property Name="MeanDailyMotion" Type="decimal" Precision="15" Scale="8" />
+    <Property Name="SemimajorAxis" Type="decimal" Precision="15" Scale="8" />
+    <Property Name="UncertaintyParameter" Type="int" />
+    <Property Name="Reference" Type="varchar" MaxLength="50" />
+    <Property Name="NumberofObservations" Type="int" />
+    <Property Name="NumberofOppositions" Type="int" />
+    <Property Name="ObservationDuration" Type="varchar" MaxLength="50" />
+    <Property Name="RMS" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="CoarseIndicatorofPerturbers" Type="varchar" MaxLength="50" />
+    <Property Name="PreciseIndicatorofPerturbers" Type="varchar" MaxLength="50" />
+    <Property Name="Computer" Type="varchar" MaxLength="50" />
+    <Property Name="TypeofOrbit" Type="varchar" MaxLength="50" />
+    <Property Name="ReadableDesignationoftheAsteroid" Type="varchar" MaxLength="50" />
+    <Property Name="DateoflastObservation" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'spaceapps.dbo.Meteors' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Meteors">
+        <Property Name="Continent" Type="varchar" MaxLength="100" />
+        <Property Name="CraterName" Type="varchar" MaxLength="100" />
+        <Property Name="Location" Type="varchar" MaxLength="20" />
+        <Property Name="Latitude" Type="varchar" MaxLength="20" />
+        <Property Name="Longitude" Type="varchar" MaxLength="20" />
+        <Property Name="DiameterKm" Type="varchar" MaxLength="20" />
+        <Property Name="AgeMa" Type="varchar" MaxLength="20" />
+        <Property Name="Exposed" Type="varchar" MaxLength="10" />
+        <Property Name="Drilled" Type="varchar" MaxLength="10" />
+        <Property Name="TargetRock" Type="varchar" MaxLength="100" />
+        <Property Name="BolideType" Type="varchar" MaxLength="100" />
+        <Property Name="Longitude2" Type="varchar" StoreGeneratedPattern="Computed" />
+        <Property Name="Latitude2" Type="varchar" StoreGeneratedPattern="Computed" />
+      </EntityType>-->
+</Schema>
